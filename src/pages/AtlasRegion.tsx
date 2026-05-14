@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, BookOpen, Layers, Video, Search, ArrowRight, X, Play, Info, Heart, Activity, Brain as BrainIcon } from 'lucide-react';
+import { ChevronLeft, BookOpen, Layers, Search, ArrowRight, X, Play, Info } from 'lucide-react';
 
 const regionData: Record<string, any> = {
   'head-neck': {
@@ -169,7 +169,7 @@ const AtlasRegion: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <AnimatePresence>
             {filteredStructures.length > 0 ? (
-              filteredStructures.map((struct: any, idx: number) => (
+              filteredStructures.map((struct: any) => (
                 <motion.div
                   key={struct.name}
                   layout

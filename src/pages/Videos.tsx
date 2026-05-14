@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Clock, Search, Filter, X, ChevronRight, Video, User } from 'lucide-react';
+import { Play, Clock, Search, X, ChevronRight, Video, User } from 'lucide-react';
 import { videoLessons } from '../data/videos';
 
 const categories = ['All', 'Skeletal', 'Muscular', 'Nervous', 'Cardiovascular', 'Digestive', 'Respiratory'];

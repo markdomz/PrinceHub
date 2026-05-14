@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Clock, Calendar, User, Share2, BookOpen, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Clock, Calendar, Share2, BookOpen, ArrowRight } from 'lucide-react';
 
 import { articles } from '../data/articles';
 
