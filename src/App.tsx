@@ -14,7 +14,7 @@ import Videos from './pages/Videos';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/PrinceHub">
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Header />

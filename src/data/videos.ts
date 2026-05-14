@@ -16,7 +16,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Nervous',
     duration: '12:45',
     thumbnail: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: 'vVj4k0J7Vog',
+    youtubeId: '3g6w9JjS7F0',
     description: 'Learn the basic divisions of the nervous system, including the CNS and PNS, and the function of neurons and glia.',
     instructor: 'Ninja Nerd'
   },
@@ -26,7 +26,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Cardiovascular',
     duration: '15:20',
     thumbnail: 'https://images.unsplash.com/photo-1628595351029-c2bf17511435?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: 'Qy4m_9y-45Y',
+    youtubeId: '8_V5c9u-t8c',
     description: 'A detailed walkthrough of the four chambers of the heart and the critical valves that regulate blood flow.',
     instructor: 'Ninja Nerd'
   },
@@ -36,7 +36,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Muscular',
     duration: '18:30',
     thumbnail: 'https://images.unsplash.com/photo-1590105577767-e21a1067899f?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: 'P2Gf17i8o_U',
+    youtubeId: 'gE7a1Tz1y6g',
     description: 'Master the major muscle groups of the human body, including their microscopic structure and contraction mechanics.',
     instructor: 'Ninja Nerd'
   },
@@ -56,7 +56,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Digestive',
     duration: '14:10',
     thumbnail: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: 'N8yX1pLp05g',
+    youtubeId: 'fR0QW-N0o-o',
     description: 'Trace the path of food through the alimentary canal and learn about the accessory organs of digestion.',
     instructor: 'Ninja Nerd'
   },
@@ -66,7 +66,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Nervous',
     duration: '22:15',
     thumbnail: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: '9X4a-tM6sYQ',
+    youtubeId: 'h1n5U36jNto',
     description: 'A comprehensive look at the brain and spinal cord structures.',
     instructor: 'Ninja Nerd'
   },
@@ -76,7 +76,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Nervous',
     duration: '19:40',
     thumbnail: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: 'vK6Oq0-7rW0',
+    youtubeId: 'K5VvG3Zc400',
     description: 'Understanding the fight-or-flight response and the autonomic nervous system.',
     instructor: 'Ninja Nerd'
   },
@@ -86,7 +86,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Cardiovascular',
     duration: '25:10',
     thumbnail: 'https://images.unsplash.com/photo-1628595351029-c2bf17511435?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: 'oG_p7fP6hYg',
+    youtubeId: 'r2Gj17Vw1_c',
     description: 'Deep dive into the blood supply of the heart muscle.',
     instructor: 'Ninja Nerd'
   },
@@ -96,7 +96,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Muscular',
     duration: '32:20',
     thumbnail: 'https://images.unsplash.com/photo-1590105577767-e21a1067899f?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: 'kZtM7rV6z38',
+    youtubeId: 's2g7rX-n9qQ',
     description: 'Detailed anatomy of the shoulder, arm, and forearm muscles.',
     instructor: 'Ninja Nerd'
   },
@@ -106,7 +106,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Muscular',
     duration: '28:15',
     thumbnail: 'https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: 'N7QdD0y6S8Y',
+    youtubeId: 't7a7-X6n3gQ',
     description: 'Detailed anatomy of the hip, thigh, and leg muscles.',
     instructor: 'Ninja Nerd'
   },
@@ -166,7 +166,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Skeletal',
     duration: '28:30',
     thumbnail: 'https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: '3GZ_pG6B-vI',
+    youtubeId: 'wZ3wR-t2aV0',
     description: 'Introduction to bone tissue, types of bones, and the overall skeletal structure.',
     instructor: 'Ninja Nerd'
   },
@@ -176,7 +176,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Endocrine',
     duration: '21:45',
     thumbnail: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: 'v5v_L_n0X8w',
+    youtubeId: '4R2m6S285aE',
     description: 'Master the major glands of the endocrine system and the hormones they produce.',
     instructor: 'Ninja Nerd'
   },
@@ -186,7 +186,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Reproductive',
     duration: '25:20',
     thumbnail: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: '3vI_h8y4mYc',
+    youtubeId: 'rC5yL-XyQ1I',
     description: 'Detailed anatomy of the male reproductive system structures and functions.',
     instructor: 'Ninja Nerd'
   },
@@ -196,7 +196,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Reproductive',
     duration: '29:15',
     thumbnail: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: 'w_p4Wp0f9oI',
+    youtubeId: '4Qn4Z4aE1_M',
     description: 'Detailed anatomy of the female reproductive system including the uterus, ovaries, and fallopian tubes.',
     instructor: 'Ninja Nerd'
   },
@@ -206,7 +206,7 @@ export const videoLessons: VideoLesson[] = [
     category: 'Cardiovascular',
     duration: '18:40',
     thumbnail: 'https://images.unsplash.com/photo-1628595351029-c2bf17511435?auto=format&fit=crop&q=80&w=1200',
-    youtubeId: '6K2-R3X6Q9w',
+    youtubeId: '1Qn5k4_GvY0',
     description: 'How the body regulates blood pressure through neural and hormonal mechanisms.',
     instructor: 'Ninja Nerd'
   }
