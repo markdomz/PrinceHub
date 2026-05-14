@@ -67,6 +67,7 @@ const Header: React.FC = () => {
             <Link to="/atlas" className="flex justify-between items-center border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>
               <span>Anatomy</span>
             </Link>
+            <Link to="/videos" className="border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>Videos</Link>
             <Link to="/quiz" className="border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>Quizzes</Link>
             <Link to="/articles" className="border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>Articles</Link>
             <div className="flex flex-col gap-4 pt-4">

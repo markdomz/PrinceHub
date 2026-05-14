@@ -138,13 +138,13 @@ const Videos: React.FC = () => {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-white rounded-[2.5rem] overflow-hidden shadow-2xl w-full max-w-5xl relative z-[110]"
+              className="bg-white rounded-[2rem] overflow-hidden shadow-2xl w-full max-w-5xl relative z-[110] max-h-[95vh] flex flex-col"
             >
               <button 
                 onClick={() => setSelectedVideo(null)}
-                className="absolute top-6 right-6 w-12 h-12 bg-white/20 hover:bg-white/40 text-white rounded-full flex items-center justify-center backdrop-blur-md transition-colors z-[120]"
+                className="absolute top-4 right-4 w-10 h-10 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-md transition-colors z-[130]"
               >
-                <X size={24} />
+                <X size={20} />
               </button>
               <div className="aspect-video w-full bg-black">
                 <iframe
@@ -157,7 +157,7 @@ const Videos: React.FC = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="p-10">
+              <div className="p-10 overflow-y-auto">
                 <div className="flex flex-wrap items-center justify-between gap-6 mb-6">
                   <div>
                     <div className="flex items-center gap-3 mb-3">
