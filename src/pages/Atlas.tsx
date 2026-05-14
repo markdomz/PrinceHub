@@ -24,7 +24,7 @@ const Atlas: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-primary mb-4">Human Anatomy Atlas</h1>
+          <h1 className="text-4xl font-bold text-primary mb-4">Human Anatomy Library</h1>
           <p className="text-text-muted text-lg max-w-2xl">
             Explore thousands of anatomical structures with our high-definition illustrations and detailed descriptions.
           </p>
@@ -75,7 +75,7 @@ const Atlas: React.FC = () => {
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
                   <Link to={`/atlas/${region.id}`}>
-                    <h3 className="text-xl font-bold text-primary hover:text-secondary transition-colors">{region.title}</h3>
+                    <h3 className="text-lg font-bold text-text-main group-hover:text-secondary transition-colors">Explore {region.title}</h3>
                   </Link>
                   <span className="bg-slate-100 text-text-muted text-xs font-bold px-2 py-1 rounded">
                     {region.count} items
@@ -83,7 +83,7 @@ const Atlas: React.FC = () => {
                 </div>
                 <div className="flex gap-4 text-sm text-text-muted">
                   <Link to={`/atlas/${region.id}`} className="flex items-center gap-1 hover:text-primary transition-colors">
-                    <ImageIcon size={14} /> Atlas
+                    <ImageIcon size={14} /> Explorer
                   </Link>
                   <Link to={`/articles/${region.id}`} className="flex items-center gap-1 hover:text-primary transition-colors">
                     <BookOpen size={14} /> Articles
@@ -102,13 +102,13 @@ const Atlas: React.FC = () => {
         <div className="mt-20 bg-primary rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden relative">
           <div className="relative z-10 max-w-xl">
             <h2 className="text-3xl font-bold mb-4">Master anatomy with our interactive tools</h2>
-            <p className="text-slate-300 mb-8 text-lg">
-              Go beyond the atlas. Take quizzes, watch videos, and use our spaced-repetition system to ensure you never forget what you've learned.
+            <p className="text-blue-100 mb-8 text-lg">
+              Go beyond the basics. Take quizzes, watch videos, and use our spaced-repetition system to ensure you never forget what you've learned.
             </p>
             <Link to="/quiz" className="btn-secondary px-8 py-4 inline-block">Start your study session</Link>
           </div>
           <div className="relative w-full md:w-1/3 aspect-square bg-white/10 rounded-full flex items-center justify-center backdrop-blur-3xl border border-white/20">
-            <ImageIcon size={120} className="text-white/40" />
+            <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=300" alt="Study" className="w-full h-full object-cover rounded-full opacity-50" />
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-secondary/30 rounded-full blur-2xl"></div>
           </div>
         </div>

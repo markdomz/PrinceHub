@@ -29,8 +29,8 @@ const Header: React.FC = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8 text-[var(--text-main)] font-medium">
-          <Link to="/atlas" className="group relative flex items-center gap-1 cursor-pointer hover:text-secondary transition-colors">
-            Anatomy <ChevronDown size={16} />
+          <Link to="/atlas" className="hover:text-secondary cursor-pointer transition-colors">
+            Anatomy
           </Link>
           <Link to="/videos" className="hover:text-secondary cursor-pointer transition-colors">Videos</Link>
           <Link to="/quiz" className="hover:text-secondary cursor-pointer transition-colors">Quizzes</Link>
@@ -66,7 +66,6 @@ const Header: React.FC = () => {
           <nav className="flex flex-col gap-6 font-semibold">
             <Link to="/atlas" className="flex justify-between items-center border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>
               <span>Anatomy</span>
-              <ChevronDown size={20} />
             </Link>
             <Link to="/quiz" className="border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>Quizzes</Link>
             <Link to="/articles" className="border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>Articles</Link>

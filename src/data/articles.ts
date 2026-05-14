@@ -26,19 +26,41 @@ export const articles: Article[] = [
     author: 'Dr. Sarah Mitchell',
     content: `
       <h2>Introduction to the Human Skeleton</h2>
-      <p>The adult human skeleton consists of 206 bones. It provides a structural framework for the body, protects internal organs, and allows for movement through its interaction with the muscular system.</p>
+      <p>The adult human skeleton consists of 206 bones, though this number varies slightly among individuals. It provides a structural framework for the body, protects internal organs, and allows for movement through its interaction with the muscular system. The skeletal system is divided into two main parts: the axial skeleton and the appendicular skeleton.</p>
       
+      <h3>The Axial Skeleton</h3>
+      <p>The axial skeleton forms the central axis of the body and consists of 80 bones. It includes the skull, the vertebral column, the ribs, and the sternum. The primary function of the axial skeleton is the protection of the central nervous system (brain and spinal cord) and the organs in the thoracic cavity.</p>
+      <ul>
+        <li><strong>Skull:</strong> Composed of 22 bones, it protects the brain and supports the structures of the face.</li>
+        <li><strong>Vertebral Column:</strong> A series of 33 vertebrae (cervical, thoracic, lumbar, sacral, and coccygeal) that supports the torso and protects the spinal cord.</li>
+        <li><strong>Thoracic Cage:</strong> Consists of 12 pairs of ribs and the sternum, protecting the heart and lungs.</li>
+      </ul>
+
+      <h3>The Appendicular Skeleton</h3>
+      <p>The appendicular skeleton consists of 126 bones and includes the upper and lower limbs, as well as the pectoral (shoulder) and pelvic girdles. This part of the skeleton is primarily involved in locomotion and manipulation of the environment.</p>
+
       <h3>Functions of the Skeletal System</h3>
       <ul>
-        <li><strong>Support:</strong> Provides a structural framework for the entire body.</li>
-        <li><strong>Protection:</strong> Shields vital internal organs (e.g., the skull protects the brain).</li>
-        <li><strong>Movement:</strong> Bones act as levers for muscles to pull against.</li>
-        <li><strong>Mineral Storage:</strong> Stores calcium and phosphorus.</li>
-        <li><strong>Blood Cell Production:</strong> Occurs in the red bone marrow.</li>
+        <li><strong>Support:</strong> Provides a structural framework for the entire body and keeps it upright.</li>
+        <li><strong>Protection:</strong> Shields vital internal organs. For example, the rib cage protects the heart and lungs, while the pelvis protects the bladder and reproductive organs.</li>
+        <li><strong>Movement:</strong> Bones act as levers. When muscles contract, they pull on bones to create movement at the joints.</li>
+        <li><strong>Mineral Storage:</strong> The skeleton acts as a reservoir for minerals, particularly calcium and phosphorus, which are essential for many physiological processes.</li>
+        <li><strong>Blood Cell Production:</strong> Most blood cells (red, white, and platelets) are produced within the red bone marrow of certain bones, such as the pelvis, ribs, and sternum.</li>
+        <li><strong>Endocrine Regulation:</strong> Bone cells release a hormone called osteocalcin, which helps regulate blood sugar and fat deposition.</li>
       </ul>
 
       <h3>Classification of Bones</h3>
-      <p>Bones are classified into five categories based on their shape: long bones, short bones, flat bones, irregular bones, and sesamoid bones.</p>
+      <p>Bones are classified into five categories based on their shape:</p>
+      <ol>
+        <li><strong>Long Bones:</strong> Cylinder-like shape, longer than it is wide (e.g., femur, humerus).</li>
+        <li><strong>Short Bones:</strong> Cube-like shape, approximately equal in length, width, and thickness (e.g., carpals, tarsals).</li>
+        <li><strong>Flat Bones:</strong> Thin and curved, providing protection and large areas for muscle attachment (e.g., sternum, ribs).</li>
+        <li><strong>Irregular Bones:</strong> Complex shapes that don't fit into other categories (e.g., vertebrae, facial bones).</li>
+        <li><strong>Sesamoid Bones:</strong> Small, round bones that develop in tendons where there is a lot of pressure (e.g., patella).</li>
+      </ol>
+
+      <h3>Microscopic Structure of Bone</h3>
+      <p>Bone tissue (osseous tissue) is a dense connective tissue. It consists of cells (osteoblasts, osteoclasts, and osteocytes) and a mineralized extracellular matrix. The matrix contains collagen fibers for flexibility and hydroxyapatite (calcium phosphate) for hardness. There are two types of bone tissue: compact bone and spongy (cancellous) bone.</p>
     `
   },
   { 
@@ -73,10 +95,38 @@ export const articles: Article[] = [
     author: 'Dr. Elena Rodriguez',
     content: `
       <h2>The Engine of Life</h2>
-      <p>The heart is a hollow, muscular organ about the size of a fist. It pumps blood through the circulatory system by rhythmic contraction and dilation.</p>
+      <p>The heart is a hollow, muscular organ about the size of a fist, located in the mediastinum of the thoracic cavity. It functions as a dual pump, circulating blood through two distinct circuits: the pulmonary circuit (to the lungs) and the systemic circuit (to the rest of the body). During an average lifetime, the heart will beat over 2.5 billion times.</p>
       
       <h3>The Four Chambers</h3>
-      <p>The heart is divided into four chambers: two upper atria and two lower ventricles. The right side of the heart pumps deoxygenated blood to the lungs, while the left side pumps oxygenated blood to the rest of the body.</p>
+      <p>The heart is divided into four chambers: two upper atria and two lower ventricles. The septa (interatrial and interventricular) separate the right and left sides of the heart.</p>
+      <ul>
+        <li><strong>Right Atrium:</strong> Receives deoxygenated blood from the body via the superior and inferior vena cava.</li>
+        <li><strong>Right Ventricle:</strong> Receives blood from the right atrium and pumps it to the lungs through the pulmonary trunk.</li>
+        <li><strong>Left Atrium:</strong> Receives oxygenated blood from the lungs via the pulmonary veins.</li>
+        <li><strong>Left Ventricle:</strong> The thickest chamber, it receives blood from the left atrium and pumps it to the entire body via the aorta.</li>
+      </ul>
+
+      <h3>The Cardiac Valves</h3>
+      <p>Valves ensure one-way blood flow through the heart. There are two types: atrioventricular (AV) valves and semilunar valves.</p>
+      <ul>
+        <li><strong>Tricuspid Valve:</strong> Between the right atrium and right ventricle.</li>
+        <li><strong>Mitral (Bicuspid) Valve:</strong> Between the left atrium and left ventricle.</li>
+        <li><strong>Pulmonary Valve:</strong> Between the right ventricle and pulmonary artery.</li>
+        <li><strong>Aortic Valve:</strong> Between the left ventricle and aorta.</li>
+      </ul>
+
+      <h3>Pathway of Blood Flow</h3>
+      <ol>
+        <li>Deoxygenated blood enters the <strong>Right Atrium</strong>.</li>
+        <li>Passes through the <strong>Tricuspid Valve</strong> into the <strong>Right Ventricle</strong>.</li>
+        <li>Pumped through the <strong>Pulmonary Valve</strong> to the <strong>Lungs</strong>.</li>
+        <li>Oxygenated blood returns to the <strong>Left Atrium</strong>.</li>
+        <li>Passes through the <strong>Mitral Valve</strong> into the <strong>Left Ventricle</strong>.</li>
+        <li>Pumped through the <strong>Aortic Valve</strong> into the <strong>Aorta</strong> and the body.</li>
+      </ol>
+
+      <h3>The Conduction System</h3>
+      <p>The heart generates its own electrical impulses. The Sinoatrial (SA) node, known as the natural pacemaker, initiates the signal. The impulse travels through the Atrioventricular (AV) node, the Bundle of His, and finally through the Purkinje fibers to cause coordinated contraction of the ventricles.</p>
     `
   },
   { 
@@ -123,8 +173,30 @@ export const articles: Article[] = [
     date: 'May 1, 2026',
     author: 'Dr. James Chen',
     content: `
-      <h2>12 Pairs of Cranial Nerves</h2>
-      <p>The cranial nerves emerge directly from the brain and brainstem. They are critical for sensory and motor function in the head and neck.</p>
+      <h2>The 12 Pairs of Cranial Nerves</h2>
+      <p>The cranial nerves (CN) are a set of 12 paired nerves that arise directly from the brain and brainstem. Unlike spinal nerves, they emerge from the cranium. They are numbered using Roman numerals (I-XII) and are named based on their function or structure.</p>
+      
+      <h3>Classification by Function</h3>
+      <p>Cranial nerves can be purely sensory, purely motor, or mixed (containing both sensory and motor fibers).</p>
+      
+      <h3>Detailed Breakdown</h3>
+      <ol>
+        <li><strong>CN I: Olfactory Nerve (Sensory):</strong> Responsible for the sense of smell.</li>
+        <li><strong>CN II: Optic Nerve (Sensory):</strong> Transmits visual information from the retina to the brain.</li>
+        <li><strong>CN III: Oculomotor Nerve (Motor):</strong> Controls most eye movements, eyelid elevation, and pupillary constriction.</li>
+        <li><strong>CN IV: Trochlear Nerve (Motor):</strong> Controls the superior oblique muscle of the eye (downward and inward movement).</li>
+        <li><strong>CN V: Trigeminal Nerve (Mixed):</strong> The largest cranial nerve. It provides facial sensation and controls the muscles of mastication (chewing). It has three branches: Ophthalmic (V1), Maxillary (V2), and Mandibular (V3).</li>
+        <li><strong>CN VI: Abducens Nerve (Motor):</strong> Controls the lateral rectus muscle (abduction of the eye).</li>
+        <li><strong>CN VII: Facial Nerve (Mixed):</strong> Controls muscles of facial expression, provides taste sensation to the anterior 2/3 of the tongue, and stimulates salivary glands.</li>
+        <li><strong>CN VIII: Vestibulocochlear Nerve (Sensory):</strong> Responsible for hearing and balance (equilibrium).</li>
+        <li><strong>CN IX: Glossopharyngeal Nerve (Mixed):</strong> Controls swallowing, provides taste to the posterior 1/3 of the tongue, and monitors blood pressure via the carotid sinus.</li>
+        <li><strong>CN X: Vagus Nerve (Mixed):</strong> The "wanderer." It has the most extensive distribution, providing parasympathetic control to the heart, lungs, and digestive tract.</li>
+        <li><strong>CN XI: Accessory Nerve (Motor):</strong> Controls the sternocleidomastoid and trapezius muscles (shrugging shoulders and turning head).</li>
+        <li><strong>CN XII: Hypoglossal Nerve (Motor):</strong> Controls the muscles of the tongue for speech and swallowing.</li>
+      </ol>
+
+      <h3>Clinical Significance</h3>
+      <p>Assessing cranial nerve function is a fundamental part of the neurological exam. For example, testing the pupillary light reflex assesses CN II and CN III, while asking a patient to stick out their tongue tests CN XII.</p>
     `
   },
   { 
