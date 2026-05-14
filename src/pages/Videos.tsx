@@ -127,64 +127,79 @@ const Videos: React.FC = () => {
       <AnimatePresence>
         {selectedVideo && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+            {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedVideo(null)}
-              className="absolute inset-0 bg-primary/90 backdrop-blur-xl"
+              className="absolute inset-0 bg-black/80 backdrop-blur-sm"
             />
-            <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-white rounded-[2rem] overflow-hidden shadow-2xl w-full max-w-5xl relative z-[110] max-h-[95vh] flex flex-col"
-            >
-              <button 
-                onClick={() => setSelectedVideo(null)}
-                className="absolute top-4 right-4 w-10 h-10 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-md transition-colors z-[130]"
+
+            {/* Modal wrapper — relative so close button can anchor to it */}
+            <div className="relative z-[110] w-full max-w-3xl flex flex-col" style={{ maxHeight: '90vh' }}>
+
+              {/* Close button — OUTSIDE the white card, always visible */}
+              <div className="flex justify-end mb-2 px-1">
+                <button
+                  onClick={() => setSelectedVideo(null)}
+                  className="w-10 h-10 bg-white text-primary rounded-full flex items-center justify-center shadow-xl hover:bg-slate-100 transition-colors"
+                >
+                  <X size={22} />
+                </button>
+              </div>
+
+              {/* White card */}
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                className="bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+                style={{ maxHeight: 'calc(90vh - 52px)' }}
               >
-                <X size={20} />
-              </button>
-              <div className="aspect-video w-full bg-black">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={`https://www.youtube.com/embed/${selectedVideo.youtubeId}?autoplay=1`}
-                  title={selectedVideo.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="p-10 overflow-y-auto">
-                <div className="flex flex-wrap items-center justify-between gap-6 mb-6">
-                  <div>
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-xs font-black uppercase tracking-widest px-4 py-1.5 bg-secondary text-white rounded-full">
-                        {selectedVideo.category}
-                      </span>
-                      <span className="flex items-center gap-1.5 text-text-muted text-sm font-medium">
-                        <Clock size={16} /> {selectedVideo.duration}
-                      </span>
-                    </div>
-                    <h2 className="text-3xl font-black text-primary">{selectedVideo.title}</h2>
-                  </div>
-                  <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-outline">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
-                      {selectedVideo.instructor.split(' ')[1].charAt(0)}
-                    </div>
-                    <div>
-                      <div className="text-xs text-text-muted font-bold uppercase tracking-widest">Instructor</div>
-                      <div className="font-bold text-primary">{selectedVideo.instructor}</div>
-                    </div>
-                  </div>
+                {/* Video */}
+                <div className="aspect-video w-full bg-black flex-shrink-0">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={`https://www.youtube.com/embed/${selectedVideo.youtubeId}?autoplay=1`}
+                    title={selectedVideo.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                 </div>
-                <p className="text-text-muted text-lg leading-relaxed max-w-3xl">
-                  {selectedVideo.description}
-                </p>
-              </div>
-            </motion.div>
+
+                {/* Info — scrollable if needed */}
+                <div className="p-6 overflow-y-auto">
+                  <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+                    <div>
+                      <div className="flex items-center gap-3 mb-2">
+                        <span className="text-xs font-black uppercase tracking-widest px-3 py-1 bg-secondary text-white rounded-full">
+                          {selectedVideo.category}
+                        </span>
+                        <span className="flex items-center gap-1.5 text-text-muted text-sm font-medium">
+                          <Clock size={14} /> {selectedVideo.duration}
+                        </span>
+                      </div>
+                      <h2 className="text-xl font-black text-primary">{selectedVideo.title}</h2>
+                    </div>
+                    <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-outline">
+                      <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+                        {selectedVideo.instructor.split(' ')[1]?.charAt(0) ?? 'N'}
+                      </div>
+                      <div>
+                        <div className="text-xs text-text-muted font-bold uppercase tracking-widest">Instructor</div>
+                        <div className="font-bold text-primary text-sm">{selectedVideo.instructor}</div>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-text-muted leading-relaxed text-sm">
+                    {selectedVideo.description}
+                  </p>
+                </div>
+              </motion.div>
+            </div>
           </div>
         )}
       </AnimatePresence>
