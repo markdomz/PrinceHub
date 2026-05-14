@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-primary: #00234B;
+  --color-secondary: #28A745;
+  --color-background: #F8F9FA;
+  --color-surface: #FFFFFF;
+  --color-outline: #E9ECEF;
+  --color-text-main: #191C1D;
+  --color-text-muted: #43474E;
+  
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-main font-inter antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-all active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-all active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .card {
+    @apply bg-white border border-outline rounded-[2rem] p-8 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,35,75,0.1)] hover:-translate-y-2;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .premium-gradient {
+    @apply bg-gradient-to-br from-primary via-primary to-blue-900;
+  }
+
+  .secondary-gradient {
+    @apply bg-gradient-to-br from-secondary via-green-600 to-green-800;
+  }
+
+  .shimmer {
+    @apply relative overflow-hidden;
+  }
+
+  .shimmer::after {
+    @apply content-[''] absolute inset-0 -translate-x-full;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: shimmer 2s infinite;
+  }
+
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .glow-primary {
+    @apply shadow-[0_0_30px_rgba(0,35,75,0.3)];
+  }
+
+  .glow-secondary {
+    @apply shadow-[0_0_30px_rgba(40,167,69,0.3)];
+  }
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded-full border-2 border-slate-100 hover:bg-slate-400 transition-colors;
+  }
+}
