@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Globe, Menu, X, ChevronDown } from 'lucide-react';
+import { Search, Globe, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
