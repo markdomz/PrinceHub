@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Clock, Search, X, ChevronRight, Video, User } from 'lucide-react';
 import { videoLessons } from '../data/videos';
 
-const categories = ['All', 'Skeletal', 'Muscular', 'Nervous', 'Cardiovascular', 'Digestive', 'Respiratory'];
+const categories = ['All', 'Skeletal', 'Muscular', 'Nervous', 'Cardiovascular', 'Digestive', 'Respiratory', 'Urinary', 'Endocrine', 'Immune'];
 
 const Videos: React.FC = () => {
   const [search, setSearch] = useState('');
