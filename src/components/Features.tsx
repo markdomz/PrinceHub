@@ -21,7 +21,7 @@ const Features: React.FC = () => {
               <p className="text-slate-300 text-lg max-w-md mb-8 leading-relaxed">
                 Our algorithm calculates the perfect time to review each term, ensuring information moves from short-term to long-term memory.
               </p>
-              <Link to="/quiz" className="bg-white text-primary px-6 py-3 rounded-xl font-bold hover:bg-slate-100 transition-colors inline-block">
+              <Link to="/articles" className="bg-white text-primary px-6 py-3 rounded-xl font-bold hover:bg-slate-100 transition-colors inline-block">
                 Start Learning
               </Link>
             </div>
@@ -30,7 +30,7 @@ const Features: React.FC = () => {
           </motion.div>
 
           {/* Small Feature Card 1 */}
-          <Link to="/atlas">
+          <Link to="/articles">
             <motion.div 
               whileHover={{ y: -5 }}
               className="bg-white rounded-3xl p-8 border border-outline shadow-sm hover:shadow-xl transition-all h-full"

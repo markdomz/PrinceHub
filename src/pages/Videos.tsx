@@ -158,16 +158,30 @@ const Videos: React.FC = () => {
                 style={{ maxHeight: 'calc(90vh - 52px)' }}
               >
                 {/* Video */}
-                <div className="aspect-video w-full bg-black flex-shrink-0">
+                <div className="aspect-video w-full bg-black flex-shrink-0 relative group/video">
                   <iframe
                     width="100%"
                     height="100%"
-                    src={`https://www.youtube.com/embed/${selectedVideo.youtubeId}?autoplay=1`}
+                    src={`https://www.youtube-nocookie.com/embed/${selectedVideo.youtubeId}?autoplay=1&modestbranding=1&rel=0`}
                     title={selectedVideo.title}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    className="w-full h-full"
                   ></iframe>
+                  
+                  {/* External Link Fallback (Top Right) */}
+                  <div className="absolute top-4 right-4 flex gap-2">
+                    <a 
+                      href={`https://www.youtube.com/watch?v=${selectedVideo.youtubeId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-black/80 backdrop-blur-md text-white text-xs font-bold rounded-full border border-white/20 hover:bg-secondary hover:border-secondary transition-all shadow-2xl"
+                    >
+                      <Video size={14} /> Play on YouTube
+                    </a>
+                  </div>
                 </div>
 
                 {/* Info — scrollable if needed */}

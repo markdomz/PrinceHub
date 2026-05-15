@@ -29,7 +29,7 @@ const Header: React.FC = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8 text-[var(--text-main)] font-medium">
-          <Link to="/atlas" className="hover:text-secondary cursor-pointer transition-colors">
+          <Link to="/articles" className="hover:text-secondary cursor-pointer transition-colors">
             Anatomy
           </Link>
           <Link to="/videos" className="hover:text-secondary cursor-pointer transition-colors">Videos</Link>
@@ -46,7 +46,7 @@ const Header: React.FC = () => {
             <Globe size={20} className="text-text-muted" />
             <span className="text-sm font-medium">EN</span>
           </button>
-          <Link to="/atlas" className="btn-primary">
+          <Link to="/articles" className="btn-primary">
             Start Learning
           </Link>
         </div>
@@ -64,13 +64,13 @@ const Header: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl border-t border-outline p-6 animate-in slide-in-from-top-4 duration-300">
           <nav className="flex flex-col gap-6 font-semibold">
-            <Link to="/atlas" className="border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>Anatomy</Link>
+            <Link to="/articles" className="border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>Anatomy</Link>
             <Link to="/videos" className="border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>Videos</Link>
             <Link to="/quiz" className="border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>Quizzes</Link>
             <Link to="/articles" className="border-b border-outline pb-2" onClick={() => setIsMobileMenuOpen(false)}>Articles</Link>
             <div className="flex flex-col gap-4 pt-4">
               <Link 
-                to="/atlas" 
+                to="/articles" 
                 className="btn-primary w-full text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
